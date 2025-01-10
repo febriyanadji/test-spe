@@ -1,0 +1,26 @@
+services:
+  soal1-laravel:
+    image: febriyanadji/spe-test-soal1:latest
+    restart: always
+    ports:
+      - "8082:80"
+  soal2-vue:
+    image: febriyanadji/spe-test-soal2:latest
+    restart: always
+    ports:
+      - "3000:80"
+  soal3-go:
+    image: febriyanadji/spe-test-soal3:latest
+    restart: always
+    ports:
+      - "8000:80"
+  mysql:
+    image: mysql:8
+    restart: always
+    environment:
+      - "MYSQL_ROOT_PASSWORD=randompassword"
+    volumes:
+      - "mysql_data:/var/lib/mysql"
+
+volumes:
+  mysql_data:
