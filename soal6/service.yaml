@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: soal1  
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+  selector:
+    app: soal1
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: soal2  
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+  selector:
+    app: soal2
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: soal3  
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+  selector:
+    app: soal3
