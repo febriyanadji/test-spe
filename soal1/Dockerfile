@@ -29,9 +29,4 @@ COPY apache/000-default.conf /etc/apache2/sites-enabled/
 
 RUN chown -R www-data:www-data storage
 
-# FROM php:8-apache
-
-# WORKDIR /var/www/html
-
-# COPY --from=builder /var/www/html/vendor vendor
-# COPY . .
+EXPOSE 80
