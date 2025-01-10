@@ -17,3 +17,5 @@ WORKDIR /app
 COPY nginx/default.conf /etc/nginx/conf.d/
 
 COPY --from=builder /app/dist ./
+
+EXPOSE 80
