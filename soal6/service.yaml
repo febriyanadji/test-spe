@@ -1,7 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: soal1  
+  name: soal1
+  namespace: default
 spec:
   type: ClusterIP
   ports:
@@ -14,7 +15,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: soal2  
+  name: soal2
+  namespace: default
 spec:
   type: ClusterIP
   ports:
@@ -27,7 +29,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: soal3  
+  name: soal3
+  namespace: default
 spec:
   type: ClusterIP
   ports:

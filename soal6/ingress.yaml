@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: soal1
+  namespace: default
 spec:
   ingressClassName: nginx
   rules:
@@ -22,6 +23,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: soal2
+  namespace: default
 spec:
   ingressClassName: nginx
   rules:
@@ -42,6 +44,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: soal3
+  namespace: default
 spec:
   ingressClassName: nginx
   rules:

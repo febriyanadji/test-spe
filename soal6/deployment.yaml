@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: soal1
+  namespace: default
 spec:
   replicas: 1
   selector:
@@ -24,6 +25,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: soal2
+  namespace: default
 spec:
   replicas: 1
   selector:
@@ -46,6 +48,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: soal3
+  namespace: default
 spec:
   replicas: 1
   selector:
